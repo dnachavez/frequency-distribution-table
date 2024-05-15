@@ -1,0 +1,82 @@
+:root {
+    --primary-100: #1F3A5F;
+    --primary-200: #4d648d;
+    --primary-300: #acc2ef;
+    --accent-100: #3D5A80;
+    --accent-200: #cee8ff;
+    --text-100: #FFFFFF;
+    --text-200: #e0e0e0;
+    --bg-100: #0F1C2E;
+    --bg-200: #1f2b3e;
+    --bg-300: #374357;
+}
+
+body {
+    background-color: var(--bg-100);
+    color: var(--text-100);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--primary-200);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--primary-200);
+    border: none;
+    color: var(--text-100);
+}
+
+.input-field input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.input-field input[type="number"]::-webkit-outer-spin-button,
+.input-field input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-bottom: 1px solid var(--accent-100) !important;
+    box-shadow: 0 1px 0 0 var(--accent-100) !important;
+}
+
+input[type="text"]:focus + label, input[type="number"]:focus + label {
+    color: var(--accent-100);
+}
+
+tr:hover {
+    background-color: rgba(31, 58, 95, 0.3);
+    color: var(--text-100);
+}
+
+tbody tr:hover {
+    background-color: rgba(31, 58, 95, 0.1) !important;
+    color: var(--text-100);
+}

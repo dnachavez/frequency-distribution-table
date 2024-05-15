@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency Distribution Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Frequency Distribution Table</h1>
+        <div class="table-container">
+            <table id="fdtTable" class="highlight centered responsive-table">
+                <thead>
+                    <tr>
+                        <th>Class Interval</th>
+                        <th>Frequency (f)</th>
+                        <th>Midpoint (X)</th>
+                        <th>fx</th>
+                        <th>d</th>
+                        <th>fd</th>
+                        <th>LCB</th>
+                        <th>UCB</th>
+                        <th>CM</th>
+                        <th>CF &lt;</th>
+                        <th>CF &gt;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="input-field" oninput="handleInputChange()"></td>
+                        <td><input type="number" class="input-field" oninput="handleInputChange()"></td>
+                        <td class="midpoint"></td>
+                        <td class="fx"></td>
+                        <td class="d"></td>
+                        <td class="fd"></td>
+                        <td class="lcb"></td>
+                        <td class="ucb"></td>
+                        <td class="cm"></td>
+                        <td class="cfLess"></td>
+                        <td class="cfGreater"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
